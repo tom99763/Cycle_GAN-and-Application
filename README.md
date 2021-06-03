@@ -1,6 +1,6 @@
 # Cycle_GAN-and-Application
 
-##Related Paper :
+Related Paper :
   * Neural Style Transfer : https://arxiv.org/pdf/1508.06576.pdf
 
   * Improve Neural Style Transfer InstanceNormalization : https://arxiv.org/pdf/1607.08022.pdf
