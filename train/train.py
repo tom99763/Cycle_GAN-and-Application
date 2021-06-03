@@ -5,8 +5,7 @@ from model.G import Generator
 from preprocess import get_data
 from tqdm import tqdm
 import cv2
-import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+
 
 aug = tf.keras.Sequential([
     #tf.keras.layers.experimental.preprocessing.RandomFlip("horizontal_and_vertical"),
