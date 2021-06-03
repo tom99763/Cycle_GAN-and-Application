@@ -16,7 +16,7 @@ aug = tf.keras.Sequential([
 
 params=Config()
 
-
+@tf.function
 def flow(x,y,l1,l2,Dx,Dy,Gxy,Gyx,Dx_opt,Dy_opt,Gxy_opt,Gyx_opt):
     with tf.GradientTape(persistent=True) as tape:
         #cycle
