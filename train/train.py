@@ -52,10 +52,10 @@ def flow(x,y,l1,l2,Dx,Dy,Gxy,Gyx,Dx_opt,Dy_opt,Gxy_opt,Gyx_opt):
         #total G
         total_Gxy_loss=Gxy_loss+\
                        params.lambda_cycle*Cycled_loss+\
-                       params.lambda_identity*identity_y_loss*0.5 #x-->y
+                       params.lambda_identity*identity_y_loss #x-->y
         total_Gyx_loss=Gyx_loss+\
                        params.lambda_cycle*Cycled_loss+\
-                       params.lambda_identity*identity_x_loss*0.5 #y-->x
+                       params.lambda_identity*identity_x_loss #y-->x
 
     Gxy_grads = tape.gradient(total_Gxy_loss,Gxy.trainable_variables)
     Gyx_grads = tape.gradient(total_Gyx_loss,Gyx.trainable_variables)
