@@ -21,7 +21,7 @@ def flow(x,y,l1,l2,Dx,Dy,Gxy,Gyx,Dx_opt,Dy_opt,Gxy_opt,Gyx_opt):
     with tf.GradientTape(persistent=True) as tape:
         #cycle
         fake_y = Gxy(x, training=True) #x-->y'
-        cycled_x = Gxy(fake_y, training=True) #y'-->x'
+        cycled_x = Gyx(fake_y, training=True) #y'-->x'
         fake_x = Gyx(y, training=True) #y-->x'
         cycled_y = Gxy(fake_x, training=True) #x'-->y'
         real_x=Gyx(x,training=True)
