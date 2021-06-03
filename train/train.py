@@ -81,8 +81,8 @@ def test(ds,Dx,Dy,Gxy,Gyx):
         y_hat=y_hat.numpy().astype('uint8')
         x_hat=x_hat.numpy().astype('uint8')
 
-        cv2.imwrite(f'X2Y_{i}.jpg',y_hat)
-        cv2.imwrite(f'Y2X_{i}.jpg',x_hat)
+        cv2.imwrite(f'./generated_img/X2Y_{i}.jpg',y_hat)
+        cv2.imwrite(f'./generated_img/Y2X_{i}.jpg',x_hat)
 
 def main():
     #D out 30x30x1 sigmoid
@@ -112,13 +112,17 @@ def main():
 
     for i in range(params.epochs):
         loop = tqdm(ds_train, leave=True)
+        print('test')
+        test(ds_val, Dx, Dy, Gxy, Gyx)
+        print('train')
         for x, y in loop:
             x, y = x[0][:, 0, ...], y[0][:, 0, ...]
             x, y = aug(x), aug(y)
             total_Gxy_loss,total_Gyx_loss,Dx_loss,Dy_loss = flow(x, y, l1, l2, Dx, Dy, Gxy, Gyx, Dx_optim, Dy_optim, Gxy_optim, Gyx_optim)
             loop.set_postfix(loss=f'total_Gxy_loss:{total_Gxy_loss},total_Gyx_loss:{total_Gyx_loss},Dx_loss:{Dx_loss},Dy_loss:{Dy_loss}')
         ckpt_manager.save()
-        if i//10==0:
+        if i//1==0:
+            print('test')
             test(ds_val,Dx, Dy, Gxy, Gyx)
 
 if __name__=='__main__':
