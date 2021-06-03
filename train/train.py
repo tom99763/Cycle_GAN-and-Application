@@ -72,6 +72,8 @@ def flow(x,y,l1,l2,Dx,Dy,Gxy,Gyx,Dx_opt,Dy_opt,Gxy_opt,Gyx_opt):
 
 def test(ds,Dx,Dy,Gxy,Gyx):
     for i,(x,y) in enumerate(ds):
+        if i==5:
+            return
         x, y = x[0][:, 0, ...], y[0][:, 0, ...]
         x, y = aug(x), aug(y)
 
