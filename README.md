@@ -1,7 +1,7 @@
 # Cycle_GAN-and-Application
 
 Related Paper :
-  * Neural Style Transfer : https://arxiv.org/pdf/1508.06576.pdf
+  * Neural Style Transfer : https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf
 
   * Improve Neural Style Transfer InstanceNormalization : https://arxiv.org/pdf/1607.08022.pdf
 
