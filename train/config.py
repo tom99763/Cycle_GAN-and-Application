@@ -9,6 +9,7 @@ class Config:
         self.lr=2e-4
         self.lambda_identity=0.0
         self.lambda_cycle=10
+        self.lambda_dis=0.5
         self.epochs=200
         self.load_model=True
         self.ckpt_path='./save/train'
