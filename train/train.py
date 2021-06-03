@@ -38,8 +38,8 @@ def flow(x,y,l1,l2,Dx,Dy,Gxy,Gyx,Dx_opt,Dy_opt,Gxy_opt,Gyx_opt):
         Dy_loss*=params.lambda_dis
 
         #Gloss
-        Gxy_loss=l2(fake_y,tf.ones_like(fake_y))
-        Gyx_loss=l2(fake_x,tf.ones_like(fake_x))
+        Gxy_loss=l2(Dy(fake_y,training=True),tf.ones_like(Dy(fake_y,training=True)))
+        Gyx_loss=l2(Dx(fake_x,training=True),tf.ones_like(Dx(fake_x,training=True)))
 
         #cycledLoss
         cycled_x_loss=l1(x,cycled_x)
