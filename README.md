@@ -15,6 +15,6 @@ dataset : https://drive.google.com/file/d/1DpKOV1VOZPU2MXDCpV9mhaEFwyRJ8nR1/view
 apple orange cycle weights : https://drive.google.com/drive/folders/1Lc0mjAtDBG2ta_sqpiIC5_jTkh20QYWG
 
 
-## Result
+## Result Orange2Apple
 ![gen](./example/n07749192_460.jpg)
 ![gen](./example/Y2X_0.jpg)
