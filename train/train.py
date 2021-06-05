@@ -81,6 +81,8 @@ def test(ds,Dx,Dy,Gxy,Gyx):
 
         y_hat=y_hat.numpy().astype('uint8')
         x_hat=x_hat.numpy().astype('uint8')
+        y_hat=cv2.cvtColor(y_hat, cv2.COLOR_BGR2RGB)
+        x_hat=cv2.cvtColor(x_hat, cv2.COLOR_BGR2RGB)
 
         cv2.imwrite(f'./generated_img/X2Y_{i}.jpg',y_hat)
         cv2.imwrite(f'./generated_img/Y2X_{i}.jpg',x_hat)
