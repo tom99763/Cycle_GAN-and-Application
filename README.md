@@ -11,3 +11,8 @@ Related Paper :
 
 
 dataset : https://drive.google.com/file/d/1DpKOV1VOZPU2MXDCpV9mhaEFwyRJ8nR1/view?usp=sharing
+
+
+## Result
+![gen](./example/n07749192_460.jpg)
+![gen](./example/Y2X_0.jpg)
