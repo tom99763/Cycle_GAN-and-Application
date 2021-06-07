@@ -12,7 +12,7 @@ Related Paper :
 
 Dataset : https://drive.google.com/file/d/1DpKOV1VOZPU2MXDCpV9mhaEFwyRJ8nR1/view?usp=sharing
 
-Apple orange cycle weights : https://drive.google.com/drive/folders/1Lc0mjAtDBG2ta_sqpiIC5_jTkh20QYWG
+Apple orange cycle weights : https://drive.google.com/drive/folders/1hiPWVHZzS63nyzzMu3xT698-gzAgOUuU?usp=sharing
 
 
 ## Result Orange2Apple
