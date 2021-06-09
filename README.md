@@ -20,6 +20,6 @@ Apple orange cycle weights : https://drive.google.com/drive/folders/1hiPWVHZzS63
 ![gen](./example/Y2X_0.jpg)
 
 
-## Own Design Dataset
+## Own Designed Dataset
 
 training now
