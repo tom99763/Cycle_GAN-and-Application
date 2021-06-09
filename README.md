@@ -18,3 +18,8 @@ Apple orange cycle weights : https://drive.google.com/drive/folders/1hiPWVHZzS63
 ## Result Orange2Apple
 ![gen](./example/n07749192_460.jpg)
 ![gen](./example/Y2X_0.jpg)
+
+
+## Own Design Dataset
+
+training now
