@@ -20,7 +20,7 @@ Apple orange cycle weights : https://drive.google.com/drive/folders/1hiPWVHZzS63
 ![gen](./example/Y2X_0.jpg)
 
 ## Manifold Visualize 
-![gen](tsne_.jpg)
+![gen](./tsne_.jpg)
 
 
 ## Own Designed Dataset
