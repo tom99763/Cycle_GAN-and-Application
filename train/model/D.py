@@ -1,6 +1,6 @@
 import tensorflow as tf
 import tensorflow_addons as tfa
-from utils import ReflectionPadding2D
+from tools import ReflectionPadding2D
 
 
 class Block(tf.keras.layers.Layer):
