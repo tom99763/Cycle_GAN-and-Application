@@ -19,7 +19,7 @@ Apple orange cycle weights : https://drive.google.com/drive/folders/1hiPWVHZzS63
 ![gen](./example/n07749192_460.jpg)
 ![gen](./example/Y2X_0.jpg)
 
-## Manifold Visualize 
+## Latent Visualize 
 ![gen](./tsne_result.jpg)
 
 
